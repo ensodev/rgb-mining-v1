@@ -1,0 +1,108 @@
+body, html{
+    margin: 0 auto;
+    background-color:red;
+    color: white;
+    text-align: center;
+
+}
+
+.container{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "plate buttons result"
+
+}
+
+.plate{
+    grid-area: plate;
+    background-color: red;
+    border-top: 5px black solid;
+    border-bottom: 5px black solid;
+    
+}
+
+.buttons{
+    grid-area: buttons;
+    background-color: green;
+    border-top: 5px black solid;
+    border-bottom: 5px black solid;
+}
+
+.result{
+    grid-area: result;
+    background-color: blue;
+    border-top: 5px black solid;
+    border-bottom: 5px black solid;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "login"
+    "total"
+    "history";
+}
+
+.won-total-loss{
+    grid-area: total;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "won total loss";
+    
+}
+
+#header{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    padding: 15px;
+}
+
+/* buttons styles */
+
+.btn-btn{
+    border-style: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 3px;
+    background-color: antiquewhite;
+    color: black;
+    width: 150px;
+    height: 25px;
+}
+
+.btn-btn:hover{
+    background-color: greenyellow;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.btn-btn:onfocus{
+    outline-style: none;
+    background-color: red;
+}
+
+/* INPUT BUS FORMAT AND ANIMATION*/
+.text-btn-btn{
+    border-style: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 3px;
+    background-color: antiquewhite;
+    color: black;
+    width: 80px;
+    height: 15px;
+}
+h6{
+    text-align: center;
+   padding:10px;
+   padding-bottom: 20px;
+
+}

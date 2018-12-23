@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RGB coin mining game</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <!-- Header Tag -->
+    <div class="header" id="header">RGBcoin Mining Game</div>
+
+    <!-- grid system start here-->
+    <div class="container" id="container">
+
+        <!--the first grid start here-->
+        <div class="plate" id="plate">
+
+            <!--Input for Predicted figures-->
+            <form action="" name="myForm1">
+                <p></p>
+                RGB1:
+                <input type="text" name="t1" class="text-btn-btn" id="text-btn-btn1" onclick="clear()" value=1>
+                <input type="text" name="t2" class="text-btn-btn" id="text-btn-btn2" onclick="clear()" value=1>:RGB2
+                <br /> RGB3:
+                <input type="text" name="t3" class="text-btn-btn" id="text-btn-btn3" onclick="clear()" value=1>
+                <input type="text" name="t4" class="text-btn-btn" id="text-btn-btn4" onclick="clear()" value=1>:RGB4
+                <p></p>
+                RGB5:
+                <input type="text" name="t5" class="text-btn-btn" id="text-btn-btn5" onclick="clear()" value=1>
+                <input type="text" name="t6" class="text-btn-btn" id="text-btn-btn6" onclick="clear()" value=1>:RGB6
+                <br /> RGB7:
+                <input type="text" name="t7" class="text-btn-btn" id="text-btn-btn7" onclick="clear()" value=1>
+                <input type="text" name="t8" class="text-btn-btn" id="text-btn-btn8" onclick="clear()" value=1>:RGB8
+                <p></p>
+                RGB9:
+                <input type="text" name="t9" class="text-btn-btn" id="text-btn-btn9" onclick="clear()" value=1>
+                <input type="text" name="t10" class="text-btn-btn" id="text-btn-btn10" onclick="clear()" value=1>:RGB10
+                <br /> RGB11
+                <input type="text" name="t11" class="text-btn-btn" id="text-btn-btn11" onclick="clear()" value=1>
+                <input type="text" name="t12" class="text-btn-btn" id="text-btn-btn12" onclick="clear()" value=1>:RGB12
+                <p></p>
+                RGB13:
+                <input type="text" name="t13" class="text-btn-btn" id="text-btn-btn13" onclick="clear()" value=1>
+                <input type="text" name="t14" class="text-btn-btn" id="text-btn-btn14" onclick="clear()" value=1>:RGB14
+                <br /> RGB15:
+                <input type="text" name="t15" class="text-btn-btn" id="text-btn-btn15" onclick="clear()" value=1>
+                <input type="text" name="t16" class="text-btn-btn" id="text-btn-btn16" onclick="clear()" value=1>:RGB16
+                <p></p>
+                RGB17:
+                <input type="text" name="t17" class="text-btn-btn" id="text-btn-btn17" onclick="clear()" value=1>
+                <input type="text" name="t18" class="text-btn-btn" id="text-btn-btn18" onclick="clear()" value=1>:RGB18
+                <br /> RGB19:
+                <input type="text" name="t19" class="text-btn-btn" id="text-btn-btn19" onclick="clear()" value=1>
+                <input type="text" name="t20" class="text-btn-btn" id="text-btn-btn20" onclick="clear()" value=1>:RGB20
+                <p></p>
+            </form>
+            <input type="button" name="pin-btn" class="btn-btn" id="btn-btn-pin" onclick="pinBoxClicked()" value="Pin Box">
+            <p></p>
+        </div>
+
+        <!-- second grid start here-->
+        <div class="buttons" id="buttons">
+            <p></p>
+            <input type="button" class="btn-btn" id="btn-btn1" onclick="randi()" value="RGB 1">
+            <input type="button" class="btn-btn" id="btn-btn2" onclick="randi()" value="RGB 2">
+            <input type="button" class="btn-btn" id="btn-btn3" onclick="randi()" value="RGB 3">
+            <input type="button" class="btn-btn" id="btn-btn4" onclick="randi()" value="RGB 4">
+            <p></p>
+            <input type="button" class="btn-btn" id="btn-btn5" onclick="randi()" value="RGB 5">
+            <input type="button" class="btn-btn" id="btn-btn6" onclick="randi()" value="RGB 6">
+            <input type="button" class="btn-btn" id="btn-btn7" onclick="randi()" value="RGB 7">
+            <input type="button" class="btn-btn" id="btn-btn8" onclick="randi()" value="RGB 8">
+            <p></p>
+            <input type="button" class="btn-btn" id="btn-btn9" onclick="randi()" value="RGB 9">
+            <input type="button" class="btn-btn" id="btn-btn10" onclick="randi()" value="RGB 10">
+            <input type="button" class="btn-btn" id="btn-btn11" onclick="randi()" value="RGB 11">
+            <input type="button" class="btn-btn" id="btn-btn12" onclick="randi()" value="RGB 12">
+            <p></p>
+            <input type="button" class="btn-btn" id="btn-btn13" onclick="randi()" value="RGB 13">
+            <input type="button" class="btn-btn" id="btn-btn14" onclick="randi()" value="RGB 14">
+            <input type="button" class="btn-btn" id="btn-btn15" onclick="randi()" value="RGB 15">
+            <input type="button" class="btn-btn" id="btn-btn16" onclick="randi()" value="RGB 16">
+            <p></p>
+            <input type="button" class="btn-btn" id="btn-btn17" onclick="randi()" value="RGB 17">
+            <input type="button" class="btn-btn" id="btn-btn18" onclick="randi()" value="RGB 18">
+            <input type="button" class="btn-btn" id="btn-btn19" onclick="randi()" value="RGB 19">
+            <input type="button" class="btn-btn" id="btn-btn20" onclick="randi2()" value="RGB 20">
+            <p></p>
+            <input type="button" class="hit-once" id="hit-once" value="Hit-Once">
+        </div>
+
+        <!--third grid start here-->
+        <div class="result" id="login-control-panel">
+            <div class="login" id="login">
+                <p></p>
+                <form action="">
+                    <input type="text" id="card-number" value="xxxx-xxxx-xxxx-xxxx" name="cardNum">
+                    <input type="text" id="pin-number" value="Pin-Num" name="pinNum">
+                    <input type="number" value="1" id="block-number" min="1" max="100" name="cardNum">
+                    <p></p>
+                    <input type="button" id="login-login" name="login-login" value="Login" onclick="login()">
+                    <input type="button" id="start-end" name="start-end" value="Start" onclick="startGame()">
+                    <input type="button" id="login-logout" name="login-logout" value="Login Out" onclick="logout()">
+                </form>
+
+            </div>
+            <!--Also inner grid display Grid display-->
+            <!--Scores Place-->
+            <div class="won-total-loss" id="won-total-loss">
+
+                <div class="won" id="won">
+                    <h1>WON</h1>
+                    <hr>
+                    <h4 id="won-win"></h4>
+                </div>
+                <div class="total" id="total">
+                    <h1>TOTAL</h1>
+                    <hr>
+                    <h4 id="won-total"></h4>
+                </div>
+                <div class="loss" id="loss">
+                    <h1>LOSS</h1>
+                    <hr>
+                    <h4 id="won-loss"></h4>
+                </div>
+
+            </div>
+
+            <!--History plate-->
+            <div class="history" id="history">
+
+                <h2 class="dollars" id="dollars">INSTANT $30 CASHOUT</h2>
+
+                <p class="history-output" id="history-output">
+                    RGB1=
+                    <span class="historyRGB" id="historyRGB1">1</span>
+                    RGB2=
+                    <span class="historyRGB" id="historyRGB2">00</span>
+                    RGB3=
+                    <span class="historyRGB" id="historyRGB3">00</span>
+                    RGB4=
+                    <span class="historyRGB" id="historyRGB4">00</span>
+                    RGB5=
+                    <span class="historyRGB" id="historyRGB5">00</span>
+                    RGB6=
+                    <span class="historyRGB" id="historyRGB6">00</span>
+                    RGB7=
+                    <span class="historyRGB" id="historyRGB7">00</span>
+                    RGB8=
+                    <span class="historyRGB" id="historyRGB8">00</span>
+                    RGB9=
+                    <span class="historyRGB" id="historyRGB9">00</span>
+                    RGB10=
+                    <span class="historyRGB" id="historyRGB10">00</span>
+                    RGB11=
+                    <span class="historyRGB" id="historyRGB11">00</span>
+                    RGB12=
+                    <span class="historyRGB" id="historyRGB12">00</span>
+                    RGB13=
+                    <span class="historyRGB" id="historyRGB13">00</span>
+                    RGB14=
+                    <span class="historyRGB" id="historyRGB14">00</span>
+                    RGB15=
+                    <span class="historyRGB" id="historyRGB15">00</span>
+                    RGB16=
+                    <span class="historyRGB" id="historyRGB16">00</span>
+                    RGB17=
+                    <span class="historyRGB" id="historyRGB17">00</span>
+                    RGB18=
+                    <span class="historyRGB" id="historyRGB18">00</span>
+                    RGB19=
+                    <span class="historyRGB" id="historyRGB19">00</span>
+                    RGB20=
+                    <span class="historyRGB" id="historyRGB20">00</span>
+                    <br />
+                    <p></p>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h6 id="footer">
+            Powered by Endodev Technology
+        </h6>
+    </div>
+
+    <!--includes files for this project-->
+    <script src="txtInputValidation.js"></script>
+    <script src="process.js"></script>
+    <script src="onDocumentLoad.js"></script>
+    <script src="enablefunctions.js"></script>
+    <script src="deasbleFunctions.js"></script>
+    <script src="mathLogic.js"></script>
+    <script src="pointMagic.js"></script>
+
+
+    <script>
+        mainDocumentLoad();
+    </script>
+    <script>
+        let lade = document.body;
+        lade.addEventListener('mousemove', backChange)
+        function backChange(e) {
+            document.body.style.backgroundColor = "rgb(" + e.clientX + "," + e.clientY + ", 10)";
+        }
+    </script>
+</body>
+
+</html>
