@@ -1,4 +1,4 @@
-# rgb-mining-game
+# rgb-mining-V1
 <h3>Javascript mining game</h3>
 
 this java game in no way a professional approach to programming, the project is to display high level of logical thinking need in programming
